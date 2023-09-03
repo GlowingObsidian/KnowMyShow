@@ -6,4 +6,4 @@ async function apiGet(query) {
   return body;
 }
 
-export const searchForShows = (show) => apiGet(`/searchcfqef/shows?q=${show}`);
+export const searchForShows = (show) => apiGet(`/search/shows?q=${show}`);
