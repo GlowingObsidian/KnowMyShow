@@ -8,3 +8,4 @@ async function apiGet(query) {
 
 export const searchForShows = (show) => apiGet(`/search/shows?q=${show}`);
 export const searchForPeople = (people) => apiGet(`/search/people?q=${people}`);
+export const searchForShowsById = (id) => apiGet(`/lookup/shows?thetvdb=${id}`);
