@@ -17,6 +17,7 @@ function ShowCard({ name, image, id, summary, onStarMeClick, isStarred }) {
         <button type="button" onClick={() => onStarMeClick(id)}>
           {isStarred ? "Unstar" : "Star"}
         </button>
+        <div></div>
       </>
     </>
   );
