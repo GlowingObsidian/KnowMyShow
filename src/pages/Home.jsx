@@ -28,6 +28,10 @@ function Home() {
       return <>No result found</>;
     }
 
+    if (apiDataError) {
+      return <>{apiDataError}</>;
+    }
+
     if (apiData) {
       if (apiData.length !== 0)
         return apiData[0].show ? (
