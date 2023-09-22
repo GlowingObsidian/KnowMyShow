@@ -11,6 +11,7 @@ const theme = {
 
 const GlobalStyles = createGlobalStyle`
   body {
+    background-color: #ffedef;
     font-family: ${({ theme }) => theme.fontFamily};
     font-size: 18px;
     margin: 0;

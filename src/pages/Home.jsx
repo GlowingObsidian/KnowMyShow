@@ -4,6 +4,7 @@ import ShowGrid from "../components/shows/ShowGrid";
 import ActorGrid from "../components/actors/ActorGrid";
 import { useQuery } from "react-query";
 import { useState } from "react";
+import { TextCenter } from "../common/TextCenter";
 
 function Home() {
   const [filter, setFilter] = useState(null);
@@ -25,11 +26,11 @@ function Home() {
 
   const RenderApiData = () => {
     if (apiData?.length === 0) {
-      return <>No result found</>;
+      return <TextCenter>No result found</TextCenter>;
     }
 
     if (apiDataError) {
-      return <>{apiDataError}</>;
+      return <TextCenter>{apiDataError}</TextCenter>;
     }
 
     if (apiData) {
