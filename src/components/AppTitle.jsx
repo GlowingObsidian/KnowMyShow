@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export default function AppTitle(props) {
   const {
-    title = "Know Your Show",
+    title = "Know My Show",
     subTitle = "Are you looking for a series or actor?",
   } = props;
 
