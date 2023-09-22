@@ -11,9 +11,8 @@ function ShowMainData({ image, name, rating, summary, genres }) {
       <DataSection>
         <Headline>
           <h1>{name}</h1>
-          <StarIcon active>
-            <span>{rating.average || "N/A"}</span>
-          </StarIcon>
+          <StarIcon active></StarIcon>
+          <span>{rating.average || "N/A"}</span>
         </Headline>
         <Summary dangerouslySetInnerHTML={{ __html: summary }}></Summary>
         <>
